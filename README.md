@@ -4,6 +4,12 @@ Cython and lists some of the issues that have been encountered during its
 development. The addon registers single operator called
 "Cython Test: My Operator" which prints a message to console when activated.
 
+## How to use?
+1. 检查当前版本blender python版本，下载安装对应版本python
+2. vscode打开当前文件夹，右下角切换python版本为blender python版本
+3. 运行setup.py，可以看到在当前文件夹下面生成了pyd文件
+4. 之后只需在blender script 中 import module 即可
+
 ## What's Cython?
 [Cython](https://cython.readthedocs.io) is a superset of the Python language
 which compiles to C. Compiled C code is compatible with the Python interpreter.
