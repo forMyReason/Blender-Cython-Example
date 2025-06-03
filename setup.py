@@ -27,5 +27,6 @@ ext_modules = [
 ]
 
 setup(
-    ext_modules=cythonize(ext_modules)
+    ext_modules=cythonize(ext_modules),
+    script_args=["build_ext", "--inplace"]      # 直接生成到当前目录
 )
